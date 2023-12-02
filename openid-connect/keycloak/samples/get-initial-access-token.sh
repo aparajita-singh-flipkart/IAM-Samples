@@ -22,8 +22,6 @@ curl --location 'http://localhost:8080/realms/master/protocol/openid-connect/tok
 
 # DB Queries
 
-
-
 docker-postgres-1  | 2023-12-02 20:32:41.007 UTC [30] LOG:  execute <unnamed>: BEGIN
 docker-postgres-1  | 2023-12-02 20:32:41.007 UTC [30] LOG:  execute <unnamed>: select c1_0.ID from CLIENT c1_0 where c1_0.CLIENT_ID=$1 and c1_0.REALM_ID=$2
 docker-postgres-1  | 2023-12-02 20:32:41.007 UTC [30] DETAIL:  parameters: $1 = 'admin-cli', $2 = 'd87b5dc5-5fc7-4a96-bcd9-0f99800c8195'
