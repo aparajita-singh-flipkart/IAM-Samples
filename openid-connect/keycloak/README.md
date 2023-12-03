@@ -41,8 +41,18 @@ volumes:
 
 ## Steps
 ### Setup
-1. Get the initial access token using: https://github.com/aparajita-singh-flipkart/IAM-Samples/blob/main/openid-connect/keycloak/samples/get-initial-access-token.sh
-2. 
+1. Get the access token whenever you get HTTP 401 error: https://github.com/aparajita-singh-flipkart/IAM-Samples/blob/main/openid-connect/keycloak/samples/get-initial-access-token.sh
+2. Create a tenant using the add realm api: https://github.com/aparajita-singh-flipkart/IAM-Samples/blob/main/openid-connect/keycloak/samples/create-tenant.sh
+3. Activate the tenant using the initial access token api: https://github.com/aparajita-singh-flipkart/IAM-Samples/blob/main/openid-connect/keycloak/samples/get-initial-access-token.sh
+4. Create the admin user to manage identities within the tenant
+5. Activate the admin user
+6. View existing realms using the get realms api: https://github.com/aparajita-singh-flipkart/IAM-Samples/blob/main/openid-connect/keycloak/samples/get-realms.sh
+7. For this POC, we will continue using the existing "admin-cli" user as the admin for managing customer info. In a production setup, a separate user would have been created to manage all entities within a tenant.
+8. [Signup] Create a customer identity with their profile: https://github.com/aparajita-singh-flipkart/IAM-Samples/blob/main/openid-connect/keycloak/samples/create-user.sh
+9. [Fetch Profile] View the created customer entity: https://github.com/aparajita-singh-flipkart/IAM-Samples/blob/main/openid-connect/keycloak/samples/get-user.sh
+10. [Update Profile] Update the user's profile information: https://github.com/aparajita-singh-flipkart/IAM-Samples/blob/main/openid-connect/keycloak/samples/update-user.sh
+11. List available authentication mechanisms: https://github.com/aparajita-singh-flipkart/IAM-Samples/blob/main/openid-connect/keycloak/samples/list-authenticators.sh
+12. [Login] 
 
 
 
